@@ -1,14 +1,24 @@
 # DESCRIPTION for the Project:
 -It has 4 main pages and contains sub pages inside the 'browse team' page.
+
  ->Home page
+
  ->Browse Team page
+
     1.India
+
     2.Australia
+
     3.England
+
     4.Pakistan
+
     5.Bangladesh
+    
     6.New Zealand
+
  ->About us page
+
  ->Contact Page 
 
 -Inside browse team page, if user clicks the 'i'(info button) in any of the team it redirects to the new page which contains information about the team and can also expand to get more information
