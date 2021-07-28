@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PersistentDrawerLeft from './components/Drawer';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Home } from './components/Home';
+import { About } from './components/About';
+import { Contact } from './components/Contact';
+import { Teams } from './components/Teams';
+import { TeamsDetails } from './components/TeamsDetail';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <PersistentDrawerLeft/>
+      <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/:TeamID' element={<TeamsDetails/>}></Route>
+          <Route path='about' element={<About/>}></Route>
+          <Route path='contact' element={<Contact/>}></Route>
+          <Route path='teams' element={<Teams/>}></Route>
+          <Route path='teams/:TeamID' element={<TeamsDetails/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
