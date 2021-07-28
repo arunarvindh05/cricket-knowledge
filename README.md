@@ -1,6 +1,8 @@
 # DESCRIPTION for the Project:
 -It has 4 main pages and contains sub pages inside the 'browse team' page.
+
 -Inside browse team page, if user clicks the 'i'(info button) in any of the team it redirects to the new page which contains information about the team and can also expand to get more information
+
 -Used react, hooks ,react-router and Material UI.
 
 # Getting Started with Create React App
