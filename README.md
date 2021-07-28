@@ -6,15 +6,10 @@
  ->Browse Team page
 
     1.India
-
     2.Australia
-
     3.England
-
     4.Pakistan
-
     5.Bangladesh
-    
     6.New Zealand
 
  ->About us page
